@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22.1)
 
-project(Cpp_Foundations)
+project(WhatsCpp)
 
 include(cmakeconf/building_output.cmake)
 include(cmakeconf/compiler_conf.cmake)
