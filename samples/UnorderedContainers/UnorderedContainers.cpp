@@ -67,9 +67,9 @@ int main()
 
     /*  Another way of categorizing containers:
  *  1. Array based containers: vector, deque
- *        
+ *  2. Node based containers: list + associative containers + unordered container    
  *     
- *  2. Node based containers invalidates pointers
+ *      Array based containers invalidates pointers(see the following example)
  *     - Native pointers, iterators, references
  *     
  */
@@ -89,6 +89,5 @@ void foo(const unordered_map<char, string>& m)
     auto itr = m.find('S');
     if(itr != m.end())
         cout << (*itr).first << " " << (*itr).second << endl;
-
 }
 
