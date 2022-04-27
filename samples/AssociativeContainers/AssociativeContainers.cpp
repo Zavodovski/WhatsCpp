@@ -56,7 +56,7 @@ int main()
     //*it = 10; //*it is read-only
 
 /*
- *  Map/Multismap
+ *  Map/Multismap(sort by key rather than value)
  *  Properties of Map
  *  1. fast insert/search : O(log(n))
  *  2. map no duplicated key but multimap allows duplicated key
