@@ -2,6 +2,15 @@
 #include"node.h"
 #include<queue>
 using namespace std;
+
+/*  Container Adadptor
+ *  provide a restricted interface to meet special needs
+ *  implemented with fundamental container classes
+ *  1. stack: LIFO, push(), pop(), top()
+ *  2. queue: FIFO, push(), pop(), front(), back()
+ *  3. priority_queue: first item always has the greatest priority push(), pop(), top() 
+ */
+
 int main()
 {
     //priority_queue默认为大顶堆，即priority_queue<int,vector<int>,less<int>>第三个参数默认为less<int>
