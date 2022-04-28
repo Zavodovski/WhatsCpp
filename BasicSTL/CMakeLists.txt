@@ -1,4 +1,4 @@
-project(samples)
+project(BasicSTL)
 
 add_subdirectory(dynlib)
 add_subdirectory(slib)

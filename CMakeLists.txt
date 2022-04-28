@@ -5,4 +5,4 @@ project(WhatsCpp)
 include(cmakeconf/building_output.cmake)
 include(cmakeconf/compiler_conf.cmake)
 
-add_subdirectory(samples)
+add_subdirectory(BasicSTL)

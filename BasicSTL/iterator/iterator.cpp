@@ -140,7 +140,7 @@ int main()
     //Note 4: Algorithm with function
     vector<int> vec4 = {2, 4, 5, 9, 2};
     vector<int>::iterator itr_odd = find_if(vec.begin(), vec.end(), isOdd); //itr -> 5
-    cout << *itr_odd << endl;
+    cout << *itr_odd << endl;  
     //Note 5: Algorithm with native C++ array
     int arr[4] = {6, 3, 7, 4};
     sort(arr, arr + 4);
