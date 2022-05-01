@@ -221,5 +221,11 @@ int main()
     s1 = "abcdefg";
     rotate(s1.begin(), s1.begin() + 3, s1.end()); //s1: defgabc
     cout << s1 << endl;
+
+    //string s
+    //u16string s1; //string char16_t
+    //u32string s1; //string char32_t
+    //wstring s1; //string wchar_t(wide character)
+    //to_wstring
     return 0;
 }
