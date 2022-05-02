@@ -6,3 +6,4 @@ include(cmakeconf/building_output.cmake)
 include(cmakeconf/compiler_conf.cmake)
 
 add_subdirectory(BasicSTL)
+add_subdirectory(Modern-C++)
