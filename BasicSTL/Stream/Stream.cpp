@@ -192,8 +192,61 @@ int main()
         ++in;
     }
     
-    copy(istreambuf_iterator<char>(cin), istreambuf_iterator<char>(), ostreambuf_iterator<char>(cout));
+    //copy(istreambuf_iterator<char>(cin), istreambuf_iterator<char>(), ostreambuf_iterator<char>(cout));
         //points to the begin of the cin streambuf, default constructor points to the end of the stream buffer, points to the begin of the cout stream buffer
     
+    //StringStream
+    stringstream ss; //Stream without IO operation
+    //read/write of string
+
+    ss << 89 << " Hex: " << hex << 89 << " Oct: " << oct << 89;
+    cout << ss.str() << endl; //89 Hex: 59 Oct: 131
+    
+    int a, b, c;
+    string s1;
+    ss >> hex >> a;  //read the first word and pass it as a hex number and then save to a
+        //Formatted input works token by token. tokens are separated by spaces tabs and new lines
+        //a == 137
+    ss >> s1; //s1: "Hex:"
+    ss >> dec >> b;  //b == 59
+    ss.ignore(6);
+
+    ss >> oct >> c; // c == 89
+
+    //ostringstream  --  only for formatted output
+    //istringstream  --  only for formatted input
+    //if need to use the stream for both input and output , should use stringstream 
+    //otherwise ostringstream or istringstream(better safety of type)
     return 0;
 }
+#if 0
+struct Dog
+{
+    int age_;
+    string name_;
+};
+
+ostream& operator<<(ostream&sm, const Dog& d)
+{
+    sm << "My name is " << d.name_ << " and my age is " << d.age_ < endl;
+    return sm;
+}
+
+istream& operator>>(istream& sm, Dog& d)
+{
+    sm >> d.age_;
+    sm >> d.name_;
+    return sm;
+}
+
+int main()
+{
+    Dog d{2, "Bob"};  //Universal Initialization
+    cout << d;
+
+    cin >> d;
+
+    cout << d;
+    return 0;
+}
+#endif
