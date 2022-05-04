@@ -57,5 +57,20 @@ int main()
     return 0;
 }
 
+
+//Restriction: it can only work with following parameters:
+#if 0
+const char*
+unsigned long long
+long double
+const char*, std::size_t
+wchar_t const*, std::size_t
+char16_t const*, std::size_t
+char32_t const*, std::size_t
+
+#endif
+
+//Note: return value can be of any types.
+
 //C++ went a long way to make user defined types(classes) to behave same as build-in types.
 //user defined literals pushes this effort even further
