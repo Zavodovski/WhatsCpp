@@ -7,3 +7,4 @@ include(cmakeconf/compiler_conf.cmake)
 
 add_subdirectory(BasicSTL)
 add_subdirectory(Modern-C++)
+add_subdirectory(AdvancedC++)
