@@ -75,3 +75,10 @@ int main()
 
     return 0;
 }
+
+/* Summary
+ *  3 ways to get a future:
+ *  - promise::get_future()
+ *  - packaged_task::get_future()
+ *  - async() returns a future
+ */
